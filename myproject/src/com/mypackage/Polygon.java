@@ -10,7 +10,6 @@ public class Polygon {
 		 */
 
 		// Defining variables
-
 		double numberOfEdges = 6;
 		double sideLenght = 10;
 		double area;
@@ -42,7 +41,6 @@ public class Polygon {
 
 		System.out.println(" ");
 		System.out.println("The area of the polygon with " + (int) numberOfE + " edge is: " + area2 + " cm^2.");
-
 		System.out.println(" ");
 
 		while (true) {
