@@ -2,7 +2,7 @@ package com.mypackage;
 
 import java.util.Scanner;
 
-public class Polygon {
+public class PolygonArea {
 	public static void main(String[] args) {
 		/*
 		 * Following code gives us only hexagon's area. the formula of the area of the
