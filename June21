@@ -1,0 +1,67 @@
+package com.lesson;
+
+public class NumberGuess {
+
+	static String[] iller = { "Adana", "Adıyaman", "Afyon", "Ağrı", "Amasya", "Ankara", "Antalya", "Artvin", "Aydın",
+			"Balıkesir", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum",
+			"Denizli", "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun",
+			"Gümüşhane", "Hakkari", "Hatay", "Isparta", "Mersin", "İstanbul", "İzmir", "Kars", "Kastamonu", "Kayseri",
+			"Kırklareli", "Kırşehir", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Kahramanmaraş", "Mardin",
+			"Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas",
+			"Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van", "Yozgat", "Zonguldak", "Aksaray",
+			"Bayburt", "Karaman", "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan", "Iğdır", "Yalova", "Karabük",
+			"Kilis", "Osmaniye", "Düzce" };
+
+	public static void main(String[] args) {
+		String[] iller2 = iller.clone();
+		String[] lastArrayStrings = delete();
+
+		startWithB(lastArrayStrings);
+		secondLetterA(iller2);
+
+	}
+
+	public static String[] delete() {
+		String[] yeniDiziStrings = new String[iller.length];
+		String[] sesliStrings = { "a", "e", "ı", "i", "o", "ö", "u", "ü" };
+
+		for (int i = 0; i < iller.length; i++) {
+			for (int j = 0; j < sesliStrings.length; j++) {
+				if (iller[i].contains(sesliStrings[j])) {
+					iller[i] = iller[i].replace(sesliStrings[j], "");
+
+				}
+
+			}
+			yeniDiziStrings[i] = iller[i];
+
+		}
+		return yeniDiziStrings;
+
+	}
+
+	public static void startWithB(String[] arr) {
+		int counter = 1;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i].startsWith("B")) {
+				if (counter < 10) {
+					System.out.println("0" + counter + " - " + arr[i]);
+					counter++;
+				} else {
+					System.out.println(counter + " - " + arr[i]);
+				}
+			}
+
+		}
+	}
+
+	public static void secondLetterA(String[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i].charAt(1) == 'a') {
+				System.out.println(arr[i].substring(0, 3).toUpperCase());
+			}
+
+		}
+
+	}
+}
