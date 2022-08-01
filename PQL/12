@@ -1,0 +1,22 @@
+SELECT COUNT (*) FROM FILM
+WHERE length> ANY
+(
+    SELECT AVG(length) FROM film
+);
+
+Select count(*) from film
+where rental_rate=
+(Select max(rental_rate) from film)
+
+(Select * from film
+where rental_rate=
+(Select min(rental_rate) from film))
+UNION
+(Select * from film
+where replacement_cost=
+(Select min(replacement_cost) from film));
+
+(Select c.customer_id, c.first_name, COUNT(*) from payment p
+Inner Join customer c ON p.customer_id = c.customer_id
+Group By c.customer_id
+Order By COUNT(*) DESC);
