@@ -1,0 +1,27 @@
+server:
+  port: 9190
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/commentapp
+    username: postgres
+    password: 1234
+
+
+  jpa:
+      hibernate:
+        ddl-auto: update
+        format_sql: true
+      show-sql: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+springdoc:
+  swagger-ui:
+    enabled: true
+
+
