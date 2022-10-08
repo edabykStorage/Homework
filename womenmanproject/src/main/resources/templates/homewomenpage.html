@@ -1,0 +1,115 @@
+<!doctype html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register Page</title>
+        <!-- http://localhost:9090/css/home.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/womenhome.css">
+        <link rel="stylesheet" href="css/home.css">
+        <style>
+            .spebg{
+                background-color: #edb5b5;
+                margin-bottom: 20px;
+
+            }
+            .spetext{
+                color: #252537;
+
+            }
+
+            .aw-zoom
+            {
+                position: relative;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                -moz-transform: scale(1);
+                transition: all .3s ease-in;
+                -moz-transition: all .3s ease-in;
+                -webkit-transition: all .3s ease-in;
+                -ms-transition: all .3s ease-in;
+            }
+
+            .aw-zoom:hover
+            {
+                z-index:2;
+                -webkit-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+    <div class="container">
+    <div class="row">
+        <nav class="col-12 navbar navbar-expand-lg spetext spebg ">
+
+            <h1 th:text="${username}"></h1>
+
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img
+                        src="https://img.freepik.com/free-vector/we-can-it_23-2147970001.jpg?w=740&t=st=1665180903~exp=1665181503~hmac=bad090e745fef35d6d52a9ade9ad0e0b65414e0cf72f2ba1c3c8590d37dc732d"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+
+                <img
+                        src="https://img.freepik.com/free-vector/girl-power-background_23-2147973081.jpg?w=740&t=st=1665181022~exp=1665181622~hmac=38f6bb1c8b95a37476fe22739d5726da6004796a0e970c54309fa5bb2a7def2d"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                        src="https://img.freepik.com/free-vector/woman-pastel-mobile-phone-wallpaper_53876-97744.jpg?w=360&t=st=1665181061~exp=1665181661~hmac=91e711834579130d361613239264aa3bed61d47f406a34901b2625987880d207"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                        src="https://img.freepik.com/free-vector/abstract-hand-drawn-woman-portrait-illustrated_23-2148871497.jpg?w=740&t=st=1665181200~exp=1665181800~hmac=afed715b73e7ab0b0ecb994078454851aaf7cce0f63a5d5c1092052917b75c6f"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+
+                <img
+                        src="https://img.freepik.com/free-vector/flat-hand-drawn-sustainable-fashion-illustration-with-woman-cotton_23-2148848376.jpg?w=740&t=st=1665181218~exp=1665181818~hmac=0ca08bb7cf61f68bb9e9dd884e01d4f450b3457d4557cab8b9b5fb435703dac1"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

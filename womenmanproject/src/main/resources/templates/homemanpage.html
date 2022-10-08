@@ -1,0 +1,115 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Man Home Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/manhome.css">
+    <style>
+        .spebg{
+            background-color: dodgerblue;
+            margin-bottom: 20px;
+
+        }
+        .spetext{
+            color: white ;
+
+        }
+
+        .aw-zoom
+        {
+            position: relative;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            -moz-transform: scale(1);
+            transition: all .3s ease-in;
+            -moz-transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+            -ms-transition: all .3s ease-in;
+        }
+
+        .aw-zoom:hover
+        {
+            z-index:2;
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <nav class="col-12 navbar navbar-expand-lg text-light spebg ">
+            <a class="navbar-brand text-light" href="#" th:text="${username}"></a>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img
+                        src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=740&t=st=1665182035~exp=1665182635~hmac=893ed1b26e554ddd0d25802d0e86990a989e5e4114af325896b1c93ea376ce45"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+
+                <img
+                        src="https://img.freepik.com/free-vector/set-businessman-character-illustration_1150-35819.jpg?w=826&t=st=1665182197~exp=1665182797~hmac=b3ef048e93f014229b0230d7eedff6be15378979ffa7052305b99133ab94a192"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                        src="https://img.freepik.com/free-vector/fashion-illustration-with-male-model_23-2148221262.jpg?w=740&t=st=1665182137~exp=1665182737~hmac=af902ce10b16d0810299989e20298da6799b0e839d480ce41f94314edc8568d1"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+
+
+
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                        src="https://img.freepik.com/free-vector/happy-smiling-man-riding-kick-scooter-sidewalk-flat-illustration-cartoon-hipster-using-electric-scooter_74855-14069.jpg?w=826&t=st=1665182292~exp=1665182892~hmac=2b17e1df6bbbf4082a6af7eca0a1efe40fabfa17b82fe0230b92f7bb38509417"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+
+                <img
+                        src="https://img.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_74855-8401.jpg?w=826&t=st=1665182239~exp=1665182839~hmac=60a69889af11d6ff7213a66ed1d95e07b59dd4d017d8015ea560c87ca9395b4b"
+                        class="w-100 shadow-1-strong rounded mb-4 aw-zoom"
+                        alt="img"
+                />
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

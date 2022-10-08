@@ -1,0 +1,18 @@
+.header{
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 120px;
+    text-align: center;
+}
+
+.main{
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+}
+
+.navbar{
+    background-color: #edb5b5;
+    padding: 20px;
+    text-align: center;
+}
